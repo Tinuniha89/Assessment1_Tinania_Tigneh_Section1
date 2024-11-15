@@ -37,7 +37,7 @@ nav ul li {
 
 nav ul li:hover {
     background-color: #bbbbbb;
-    color: black;
+    color: rgb(179, 174, 174);
 }
 
 nav ul li a {
@@ -120,7 +120,7 @@ footer {
         justify-content: space-between;
         margin-left: 5%;
         margin-right: 5%;
-        gap: 0.5;
+        gap: 0.6;
         grid-template-columns: repeat(2, 1fr);
     }
 
