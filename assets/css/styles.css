@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #d2cfcf;
+    width: 100%;
+}
+
+header {
+    background-color: #d9eed9;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    background-color: #d2cfcf;
+    color: green;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul li:hover {
+    background-color: #bbbbbb;
+    color: black;
+}
+
+nav ul li a {
+    color: #4b814c;
+    text-decoration: none;
+    margin: 10px;
+}
+
+main {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(86, 85, 85, 0.1);
+    width: 70%;
+    box-sizing: border-box;
+    display: flex; 
+    gap: 2%;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.product .price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #124314;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    bottom: 0;
+}
+ nav ul {
+        flex-direction: row;
+        justify-content: center;
+        
+
+ }
+
+@media (min-width: 768px) {
+   
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    .product-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 0.5;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product {
+        flex: 1 1 calc(50% - 1em);
+        margin: 1em;
+        width: calc(50% - 2em);
+    }
+}
+
+article{
+    width: 70%;
+}
+
+@media (min-width: 1024px) {
+    .product-list {
+        justify-content: space-between;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product {
+        flex: 1 1 calc(33.333% - 1em);
+        margin: 1em 0.5em;
+        width: calc(33.333% - 1em);
+    }
+}
