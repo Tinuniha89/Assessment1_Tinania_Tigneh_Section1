@@ -131,9 +131,8 @@ footer {
     }
 }
 
-article{
-    width: 70%;
-}
+ 
+
 
 @media (min-width: 1024px) {
     .product-list {
@@ -147,3 +146,4 @@ article{
         width: calc(33.333% - 1em);
     }
 }
+
